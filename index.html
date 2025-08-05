@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenviaHomes | Invest in Dubai Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- START: Hero Section with Form -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Invest Smart in Dubai's Booming Real Estate</h1>
+      <p>Get curated investment options tailored to your goals. Start by answering a few questions.</p>
+    </div>
+
+    <!-- Form Section with Scroll Target ID -->
+    <div id="lead-form">
+      <form id="quiz-form" class="form-container">
+        <!-- Step 1 -->
+        <div class="form-step active" id="step-1">
+          <label>What is your primary investment goal?</label>
+          <select required>
+            <option value="">Select</option>
+            <option value="rental">Rental Yield</option>
+            <option value="appreciation">Capital Appreciation</option>
+            <option value="golden">Golden Visa</option>
+          </select>
+          <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="step-2">
+          <label>How much do you plan to invest (in AED)?</label>
+          <input type="number" placeholder="Example: 500000" required />
+          <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step" id="step-3">
+          <label>Your Full Name</label>
+          <input type="text" required />
+          <label>Email</label>
+          <input type="email" required />
+          <label>Phone Number</label>
+          <input type="tel" required />
+          <button type="submit">Submit</button>
+        </div>
+
+        <!-- Thank You Message -->
+        <div class="form-step" id="thank-you">
+          <h2>Thank you!</h2>
+          <p>Your details have been submitted. Our team will contact you shortly.</p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+<!-- END: Hero Section with Form -->
+
+<!-- START: Stats Section -->
+<section class="stats">
+  <div class="stat">
+    <h2>8%+</h2>
+    <p>Average Rental Yield</p>
+  </div>
+  <div class="stat">
+    <h2>0%</h2>
+    <p>Tax On Rental Income</p>
+  </div>
+  <div class="stat">
+    <h2>100%</h2>
+    <p>Foreign Ownership Allowed</p>
+  </div>
+</section>
+<!-- END: Stats Section -->
+
+<!-- START: Why Dubai Section -->
+<section class="why-dubai">
+  <h2>Why Invest in Dubai Real Estate?</h2>
+  <div class="why-cards">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/7972059/pexels-photo-7972059.jpeg" alt="Skyline">
+      <h3>High ROI & Rental Yield</h3>
+      <p>Dubai offers 7-10% rental returns—higher than major global cities like London or New York.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/8319458/pexels-photo-8319458.jpeg" alt="Tax Free">
+      <h3>Zero Property Tax</h3>
+      <p>Enjoy 0% tax on rental income and capital gains—boosting your net returns significantly.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/29080577/pexels-photo-29080577.jpeg" alt="Global Hub">
+      <h3>Global Investor Hub</h3>
+      <p>With 100% foreign ownership and simplified processes, Dubai welcomes global investors warmly.</p>
+    </div>
+  </div>
+</section>
+<!-- END: Why Dubai Section -->
+
+<!-- START: Why Zenvia Section -->
+<section class="why-zenvia">
+  <div class="container">
+    <h2>Why ZenviaHomes?</h2>
+    <p class="subtitle">Your trusted partner in Dubai real estate</p>
+
+    <div class="features">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Expert Guidance" />
+        <h3>Expert Guidance</h3>
+        <p>10+ years navigating Dubai's property market</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Exclusive Access" />
+        <h3>Exclusive Access</h3>
+        <p>Pre-launch deals & off-market units</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="End-to-End Support" />
+        <h3>End-to-End Support</h3>
+        <p>From property visits to legal paperwork</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Why Zenvia Section -->
+
+<!-- START: Developers Section -->
+<section class="developers">
+  <div class="container">
+    <h2>Partnered with Dubai’s Leading Developers</h2>
+    <p class="subtitle">We bring you properties from the most trusted names in Dubai real estate</p>
+
+    <div class="dev-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Damac_logo.svg/2560px-Damac_logo.svg.png" alt="DAMAC" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Emaar_logo.svg" alt="Emaar" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/DANUBE.png/1920px-DANUBE.png" alt="Danube" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Sobha_%28company%29.svg/1920px-Sobha_%28company%29.svg.png" alt="Sobha" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Nakheel_logo.svg/2560px-Nakheel_logo.svg.png" alt="Nakheel" />
+    </div>
+  </div>
+</section>
+<!-- END: Developers Section -->
+
+<!-- START: Requirements Section -->
+<section class="requirements">
+  <div class="container">
+    <h2>What You Need to Start Investing</h2>
+    <p class="subtitle">Simple process, low entry barrier. We guide you every step of the way.</p>
+
+    <div class="requirement-cards">
+      <div class="card">
+        <h3>✅ Minimum Investment</h3>
+        <p>AED 500,000</p>
+      </div>
+      <div class="card">
+        <h3>📝 Required Documents</h3>
+        <p>Passport copy, Emirates ID (if available)</p>
+      </div>
+      <div class="card">
+        <h3>📋 Investment Process</h3>
+        <p>Submit → Get a Call → Curated Properties → Invest</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Requirements Section -->
+
+<!-- START: Investment Intent Comparison Section -->
+<section class="intent-split">
+  <div class="container">
+    <h2>What’s Your Investment Goal?</h2>
+    <p class="subtitle">Compare benefits of each to see what suits you best.</p>
+
+    <div class="goal-cards">
+      <div class="goal-card">
+        <h3>🇦🇪 Golden Visa</h3>
+        <ul>
+          <li>✅ 10-year UAE Residency</li>
+          <li>✅ Min. AED 2M property</li>
+          <li>✅ Family visa eligibility</li>
+        </ul>
+      </div>
+      <div class="goal-card">
+        <h3>💰 Rental Yield</h3>
+        <ul>
+          <li>✅ 7–10% annual returns</li>
+          <li>✅ Fully managed properties</li>
+          <li>✅ Monthly income option</li>
+        </ul>
+      </div>
+      <div class="goal-card">
+        <h3>📈 Capital Appreciation</h3>
+        <ul>
+          <li>✅ Invest in growth zones</li>
+          <li>✅ Higher resale value</li>
+          <li>✅ Great for long-term ROI</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END: Investment Intent Comparison Section -->
+
+<!-- START: Premium Dubai Properties Section -->
+<section class="premium-gallery">
+  <div class="container">
+    <h2>Check Out Premium Dubai Properties</h2>
+    <p class="subtitle">A showcase of luxury, location & lifestyle.</p>
+
+    <div class="premium-slider">
+      <div class="premium-track">
+        <div class="premium-slide">
+          <img src="https://images.pexels.com/photos/8342444/pexels-photo-8342444.jpeg" alt="Dubai Property 1">
+          <div class="property-info">
+            <h4>Marina Skyscraper</h4>
+            <p><em>Dubai Marina</em></p>
+          </div>
+        </div>
+        <div class="premium-slide">
+          <img src="https://images.pexels.com/photos/29149077/pexels-photo-29149077.jpeg" alt="Dubai Property 2">
+          <div class="property-info">
+            <h4>Downtown Elite</h4>
+            <p><em>Downtown Dubai</em></p>
+          </div>
+        </div>
+        <div class="premium-slide">
+          <img src="https://images.pexels.com/photos/10647324/pexels-photo-10647324.jpeg" alt="Dubai Property 3">
+          <div class="property-info">
+            <h4>Palm Waterfront</h4>
+            <p><em>Palm Jumeirah</em></p>
+          </div>
+        </div>
+        <div class="premium-slide">
+          <img src="https://images.pexels.com/photos/16563221/pexels-photo-16563221.jpeg" alt="Dubai Property 4">
+          <div class="property-info">
+            <h4>Business Heights</h4>
+            <p><em>Business Bay</em></p>
+          </div>
+        </div>
+        <div class="premium-slide">
+          <img src="https://images.pexels.com/photos/24805054/pexels-photo-24805054.jpeg" alt="Dubai Property 5">
+          <div class="property-info">
+            <h4>Creek View Homes</h4>
+            <p><em>Dubai Creek Harbour</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- END: Premium Dubai Properties Section -->
+
+<!-- ======================= HOW IT WORKS SECTION START ======================= -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <p class="subtitle">A simple 4-step process to get started with high-yield investments in Dubai.</p>
+
+    <div class="steps-grid">
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <h3>Submit Your Goals</h3>
+        <p>Start by telling us your investment preferences via our short form.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <h3>Expert Call & Discovery</h3>
+        <p>Our Dubai-based advisors understand your goals over a discovery call.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <h3>Curated Options</h3>
+        <p>Get access to pre-vetted properties aligned with your expectations.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-number">4</div>
+        <h3>Secure Your Property</h3>
+        <p>We guide you through paperwork, booking, and onboarding remotely or in person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================== HOW IT WORKS SECTION END ======================== -->
+
+<!-- ======================= TESTIMONIALS SECTION START ======================= -->
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="slider" id="testimonial-slider">
+      <div class="slide active">
+        <p>"ZenviaHomes helped me invest remotely without hassle. The returns have been consistent, and I feel confident about Dubai's market now."</p>
+        <h4>– Priya M., Mumbai</h4>
+      </div>
+      <div class="slide">
+        <p>"Their team really understood my goals and suggested properties that matched my expectations. Excellent support throughout."</p>
+        <h4>– Ahmed R., Hyderabad</h4>
+      </div>
+      <div class="slide">
+        <p>"I chose ZenviaHomes after a friend's referral. Got my Golden Visa and a solid rental asset. Highly recommend them!"</p>
+        <h4>– Sneha K., Bengaluru</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================== TESTIMONIALS SECTION END ======================== -->
+
+<!-- ======================= FINAL CTA SECTION START ======================= -->
+<section class="final-cta">
+  <div class="cta-container">
+    <h2>Ready to Invest in Dubai's Future?</h2>
+    <p>Secure high returns, tax-free income, and a gateway to global residency. Let ZenviaHomes guide your smart investment journey.</p>
+    <button onclick="scrollToForm()">Start Your Free Assessment</button>
+  </div>
+</section>
+<!-- ======================== FINAL CTA SECTION END ======================== -->
+
+<!-- ======================= FAQ SECTION START ======================= -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    
+    <div class="faq">
+      <input type="checkbox" id="faq1">
+      <label for="faq1">Is investing in Dubai legal for Indian residents?</label>
+      <div class="faq-content">
+        <p>Yes, Indian residents can legally invest in Dubai real estate. It’s 100% foreigner-friendly and compliant with international regulations.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq2">
+      <label for="faq2">What is the minimum investment required?</label>
+      <div class="faq-content">
+        <p>It usually starts from AED 500,000 (approx ₹1.1 crore), depending on the project and developer offers.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq3">
+      <label for="faq3">Do I get a residence visa with property investment?</label>
+      <div class="faq-content">
+        <p>Yes, investments above AED 750,000 can make you eligible for a renewable 2-year residence visa in most cases.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq4">
+      <label for="faq4">How are returns generated from my investment?</label>
+      <div class="faq-content">
+        <p>Returns come from rental income or capital appreciation, depending on whether you choose short-term or long-term rentals or resale.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq5">
+      <label for="faq5">Are there taxes on Dubai real estate income?</label>
+      <div class="faq-content">
+        <p>No, Dubai does not charge income tax on rental earnings or capital gains from real estate sales.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq6">
+      <label for="faq6">How secure is my investment?</label>
+      <div class="faq-content">
+        <p>All property purchases go through RERA-regulated escrow accounts. You own the asset directly with full legal protection.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <input type="checkbox" id="faq7">
+      <label for="faq7">Can ZenviaHomes help with documentation and transfers?</label>
+      <div class="faq-content">
+        <p>Yes, our team manages all legal documentation, developer coordination, and ownership transfers end-to-end.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ======================== FAQ SECTION END ======================== -->
+
+<!-- ======================= FOOTER SECTION START ======================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <p class="footer-branding">© 2025 ZenviaHomes | All Rights Reserved</p>
+    <p class="footer-disclaimer">
+      This site is not a part of the Facebook™ or Google™ website or Meta Platforms Inc. or Alphabet Inc. Additionally, this site is NOT endorsed by Facebook™ or Google™ in any way. Facebook™ and Google™ are trademarks of their respective companies.
+    </p>
+    <div class="footer-nav">
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+</footer>
+<!-- ======================== FOOTER SECTION END ======================== -->
+
+<!-- ======================= JS & SCRIPTS ======================= -->
+<script src="scripts.js"></script>
+</body>
+</html>
+<!-- ======================= END OF HTML FILE ======================= -->
