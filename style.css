@@ -642,7 +642,7 @@ button:hover {
   max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  min-height: 150px;
+  min-height: auto; /* Let it grow as needed */
 }
 
 .slide {
@@ -657,6 +657,7 @@ button:hover {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
 .slide.active {
@@ -665,12 +666,14 @@ button:hover {
   transform: translateX(0%);
   z-index: 2;
   display: block;
+  position: relative; /* Changed from absolute to avoid clipping */
 }
 
 .slide p {
   font-size: 1.1em;
   color: #333;
   font-style: italic;
+  word-wrap: break-word;
 }
 
 .slide h4 {
@@ -684,8 +687,17 @@ button:hover {
     padding: 0 10px;
   }
 
+  .slide {
+    position: relative; /* Allow natural stacking */
+    padding: 15px;
+  }
+
   .slide p {
     font-size: 1em;
+  }
+
+  .slide h4 {
+    font-size: 0.95em;
   }
 }
 /* =================== TESTIMONIALS SECTION (CSS) END =================== */
