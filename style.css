@@ -638,58 +638,51 @@ button:hover {
 }
 
 .slider {
-  position: relative;
   max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  min-height: auto; /* Let it grow as needed */
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: transform 1s ease, opacity 1s ease;
-  transform: translateX(100%);
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
   box-sizing: border-box;
 }
 
+.slide {
+  display: none;
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  word-break: break-word;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .slide.active {
-  left: 0;
-  opacity: 1;
-  transform: translateX(0%);
-  z-index: 2;
   display: block;
-  position: relative; /* Changed from absolute to avoid clipping */
 }
 
 .slide p {
   font-size: 1.1em;
   color: #333;
   font-style: italic;
-  word-wrap: break-word;
+  margin-bottom: 15px;
 }
 
 .slide h4 {
-  margin-top: 15px;
   font-size: 1em;
   color: #555;
 }
 
 @media (max-width: 768px) {
-  .slider {
-    padding: 0 10px;
+  .testimonials {
+    padding: 40px 15px;
+  }
+
+  .testimonials h2 {
+    font-size: 1.5em;
   }
 
   .slide {
-    position: relative; /* Allow natural stacking */
-    padding: 15px;
+    padding: 20px 15px;
   }
 
   .slide p {
@@ -700,6 +693,7 @@ button:hover {
     font-size: 0.95em;
   }
 }
+
 /* =================== TESTIMONIALS SECTION (CSS) END =================== */
 
 /* ================== FINAL CTA SECTION (CSS) START ================== */
