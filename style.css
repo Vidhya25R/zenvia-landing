@@ -32,6 +32,7 @@ body, html {
 /* =================== BASE STYLES END =================== */
 
 /* ================== HERO SECTION START ================== */
+/* Hero Section */
 .hero {
   background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
               url('https://images.pexels.com/photos/325193/pexels-photo-325193.jpeg') no-repeat center center;
@@ -41,6 +42,7 @@ body, html {
   z-index: 1;
 }
 
+/* Main Content Container */
 .hero-content {
   max-width: 960px;
   margin: 0 auto;
@@ -48,6 +50,7 @@ body, html {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 0 1rem; /* Ensures balance on small screens */
 }
 
 /* Hero Text */
@@ -65,11 +68,11 @@ body, html {
 
 .hero-text p {
   font-size: 1.1rem;
-  font-weight: 700; /* Make subtitle bold */
+  font-weight: 700;
   color: #333;
 }
 
-/* Form */
+/* Form Container */
 .form-container {
   background: #fff;
   padding: 2rem;
@@ -78,8 +81,10 @@ body, html {
   flex: 1;
   min-width: 280px;
   margin-left: 2rem;
+  box-sizing: border-box;
 }
 
+/* Steps (multi-step form) */
 .form-step {
   display: none;
   flex-direction: column;
@@ -89,12 +94,14 @@ body, html {
   display: flex;
 }
 
+/* Form Elements */
 label {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-input, select {
+input,
+select {
   padding: 0.75rem;
   margin-bottom: 1rem;
   border-radius: 5px;
@@ -117,15 +124,17 @@ button:hover {
   opacity: 0.9;
 }
 
+/* Responsive Styling */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
+    padding: 0 1rem; /* Balance spacing */
   }
 
   .form-container {
+    margin: 0 auto; /* Center form */
+    margin-bottom: 2rem;
     padding: 1.5rem;
-    margin: 0 1rem; /* Add spacing left and right */
-    box-sizing: border-box;
   }
 
   .hero {
@@ -133,11 +142,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
-    padding-bottom: 2rem; /* Prevent background spillover */
-  }
-
-  .hero-content {
-    padding-bottom: 0;
+    padding-bottom: 2rem;
   }
 }
 /* =================== HERO SECTION END =================== */
